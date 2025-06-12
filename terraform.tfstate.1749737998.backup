@@ -1,7 +1,7 @@
 {
   "version": 4,
   "terraform_version": "1.12.1",
-  "serial": 59,
+  "serial": 32,
   "lineage": "0430ef48-eb5f-5032-fc34-0a09d5d13566",
   "outputs": {
     "location": {
@@ -31,15 +31,15 @@
         {
           "schema_version": 2,
           "attributes": {
-            "app_id": "dd30486c-ec20-494e-8c2e-0966aaf4f538",
+            "app_id": "c64614fc-d634-4139-a5df-f48cecb4a853",
             "application_type": "web",
-            "connection_string": "InstrumentationKey=fa627963-2ae9-4a88-964b-f4e831f04ccc;IngestionEndpoint=https://eastus-8.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/;ApplicationId=dd30486c-ec20-494e-8c2e-0966aaf4f538",
+            "connection_string": "InstrumentationKey=7f7a4a77-5a4c-4b30-b764-dced0704ade9;IngestionEndpoint=https://eastus-8.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/;ApplicationId=c64614fc-d634-4139-a5df-f48cecb4a853",
             "daily_data_cap_in_gb": 100,
             "daily_data_cap_notifications_disabled": false,
             "disable_ip_masking": false,
             "force_customer_storage_for_profiler": false,
             "id": "/subscriptions/782b82e6-6b2a-49d7-bf16-642ff7ea3e80/resourceGroups/rg-monitoring/providers/Microsoft.Insights/components/appinsights-monitoring",
-            "instrumentation_key": "fa627963-2ae9-4a88-964b-f4e831f04ccc",
+            "instrumentation_key": "7f7a4a77-5a4c-4b30-b764-dced0704ade9",
             "internet_ingestion_enabled": true,
             "internet_query_enabled": true,
             "local_authentication_disabled": false,
@@ -138,9 +138,9 @@
             ],
             "provision_vm_agent": true,
             "proximity_placement_group_id": "",
-            "public_ip_address": "4.157.248.201",
+            "public_ip_address": "172.190.194.215",
             "public_ip_addresses": [
-              "4.157.248.201"
+              "172.190.194.215"
             ],
             "reboot_setting": "",
             "resource_group_name": "rg-monitoring",
@@ -152,15 +152,15 @@
               {
                 "offer": "UbuntuServer",
                 "publisher": "Canonical",
-                "sku": "16.04-LTS",
+                "sku": "18.04-LTS",
                 "version": "latest"
               }
             ],
-            "tags": null,
-            "termination_notification": null,
+            "tags": {},
+            "termination_notification": [],
             "timeouts": null,
             "user_data": "",
-            "virtual_machine_id": "4ada0d0d-d61c-49c1-ae13-ca3bf8b947d6",
+            "virtual_machine_id": "3352320a-3975-4005-8cc5-d9e1db81401d",
             "virtual_machine_scale_set_id": "",
             "vm_agent_platform_updates_enabled": false,
             "vtpm_enabled": false,
@@ -213,15 +213,15 @@
             "local_authentication_disabled": false,
             "location": "eastus",
             "name": "log-workspace-monitoring",
-            "primary_shared_key": "R3sd8J+gEhXqWb2g9MacT/tzo2drUA9bpHS9c65zhEG4s2OnBfweSVPGMr0PwfmUpBUD15gY+HAWFgvdRo/cuQ==",
+            "primary_shared_key": "kx0fguNyXwTVnYUYn3W5u5gsDAcEvod/eAofoBFwLseCsFWjs4xIpgOl29a8o2q6wlZgBY8N4Hd+/f7wvsigKA==",
             "reservation_capacity_in_gb_per_day": null,
             "resource_group_name": "rg-monitoring",
             "retention_in_days": 30,
-            "secondary_shared_key": "/WggPPJv8S31FO6mGXQDJfCvnNpyRdp1qGtHAlr1aisGvJHfjDDR/OIaszwTPbLIO75COMIUJHVh3bBXS16rmg==",
+            "secondary_shared_key": "5ZUflALsrNhD1wGMXLHeouQDCLjUp4EFJSONOkcRRE5gkNjxEYJO38NGVdUUC4FAIUQ557AWaMFO6j4Xzow/IQ==",
             "sku": "PerGB2018",
             "tags": {},
             "timeouts": null,
-            "workspace_id": "5261cd57-ec00-4c17-a932-d319a34d04f9"
+            "workspace_id": "697aabb0-63f1-4a5b-b70a-f518162f2c01"
           },
           "sensitive_attributes": [
             [
@@ -264,7 +264,7 @@
             "enable_ip_forwarding": false,
             "id": "/subscriptions/782b82e6-6b2a-49d7-bf16-642ff7ea3e80/resourceGroups/rg-monitoring/providers/Microsoft.Network/networkInterfaces/nic-monitoring",
             "internal_dns_name_label": "",
-            "internal_domain_name_suffix": "xdq0ukfns5aufnpk5lbbdvwejh.bx.internal.cloudapp.net",
+            "internal_domain_name_suffix": "jjg5q0rduxduhbl23xrp4qag3g.bx.internal.cloudapp.net",
             "ip_configuration": [
               {
                 "gateway_load_balancer_frontend_ip_configuration_id": "",
@@ -279,7 +279,7 @@
             ],
             "ip_forwarding_enabled": false,
             "location": "eastus",
-            "mac_address": "00-0D-3A-8D-F4-69",
+            "mac_address": "00-0D-3A-1C-D5-7A",
             "name": "nic-monitoring",
             "private_ip_address": "10.0.1.4",
             "private_ip_addresses": [
@@ -319,7 +319,7 @@
             "fqdn": null,
             "id": "/subscriptions/782b82e6-6b2a-49d7-bf16-642ff7ea3e80/resourceGroups/rg-monitoring/providers/Microsoft.Network/publicIPAddresses/public-ip",
             "idle_timeout_in_minutes": 4,
-            "ip_address": "52.226.129.17",
+            "ip_address": "172.190.194.215",
             "ip_tags": {},
             "ip_version": "IPv4",
             "location": "eastus",
@@ -415,12 +415,12 @@
             "failure_suppression_enabled": false,
             "id": "/subscriptions/782b82e6-6b2a-49d7-bf16-642ff7ea3e80/resourceGroups/rg-monitoring/providers/Microsoft.Compute/virtualMachines/vm-monitoring/extensions/OmsAgentForLinux",
             "name": "OmsAgentForLinux",
-            "protected_settings": "{\"workspaceKey\":\"R3sd8J+gEhXqWb2g9MacT/tzo2drUA9bpHS9c65zhEG4s2OnBfweSVPGMr0PwfmUpBUD15gY+HAWFgvdRo/cuQ==\"}",
+            "protected_settings": null,
             "protected_settings_from_key_vault": [],
-            "provision_after_extensions": null,
+            "provision_after_extensions": [],
             "publisher": "Microsoft.EnterpriseCloud.Monitoring",
-            "settings": "{\"workspaceId\":\"5261cd57-ec00-4c17-a932-d319a34d04f9\"}",
-            "tags": null,
+            "settings": "{\"workspaceId\":\"697aabb0-63f1-4a5b-b70a-f518162f2c01\"}",
+            "tags": {},
             "timeouts": null,
             "type": "OmsAgentForLinux",
             "type_handler_version": "1.0",
@@ -435,16 +435,7 @@
             ]
           ],
           "identity_schema_version": 0,
-          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
-          "dependencies": [
-            "azurerm_linux_virtual_machine.vm_monitoring",
-            "azurerm_log_analytics_workspace.monitoring",
-            "azurerm_network_interface.main_nic",
-            "azurerm_public_ip.public_ip",
-            "azurerm_resource_group.main",
-            "azurerm_subnet.subnet",
-            "azurerm_virtual_network.vnet"
-          ]
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIwIn0="
         }
       ]
     },
@@ -466,7 +457,7 @@
             "edge_zone": "",
             "encryption": [],
             "flow_timeout_in_minutes": 0,
-            "guid": "28aae1b8-97ad-42c1-b5ea-fac211d6c44f",
+            "guid": "6af84d4a-a523-43c7-857c-ede2ff4006ee",
             "id": "/subscriptions/782b82e6-6b2a-49d7-bf16-642ff7ea3e80/resourceGroups/rg-monitoring/providers/Microsoft.Network/virtualNetworks/vnet-monitoring",
             "location": "eastus",
             "name": "vnet-monitoring",
