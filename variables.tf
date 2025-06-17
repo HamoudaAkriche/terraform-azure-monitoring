@@ -40,8 +40,11 @@ variable "subscription_id" {
 
 #variable pour faire la verification
 variable "tags" {
-  type    = map(string)
+  description = "Tags for all resources"
+  type        = map(string)
   default = {
     environment = "dev"
+    owner       = "hamouda"
   }
 }
+

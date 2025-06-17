@@ -5,3 +5,4 @@ crash.log
 *.log
 *.exe
 *.zip
+terraform.tfvars
