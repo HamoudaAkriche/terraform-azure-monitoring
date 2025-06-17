@@ -23,10 +23,13 @@ jobs:
       run: terraform validate
 
     - name: Terraform Plan
-      run: terraform plan -var="client_id=${{ fromJson(secrets.AZURE_CREDENTIALS).clientId }}" \
-                          -var="client_secret=${{ fromJson(secrets.AZURE_CREDENTIALS).clientSecret }}" \
-                          -var="tenant_id=${{ fromJson(secrets.AZURE_CREDENTIALS).tenantId }}" \
-                          -var="subscription_id=${{ fromJson(secrets.AZURE_CREDENTIALS).subscriptionId }}"
+      run: |
+        terraform plan \
+          -var="client_id=${{ fromJson(secrets.AZURE_CREDENTIALS).clientId }}" \
+          -var="client_secret=${{ fromJson(secrets.AZURE_CREDENTIALS).clientSecret }}" \
+          -var="tenant_id=${{ fromJson(secrets.AZURE_CREDENTIALS).tenantId }}" \
+          -var="subscription_id=${{ fromJson(secrets.AZURE_CREDENTIALS).subscriptionId }}"
+
                           
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
