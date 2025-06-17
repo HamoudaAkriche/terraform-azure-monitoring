@@ -22,3 +22,26 @@ variable "admin_password" {
   sensitive   = true
   default     = "Admin@1234" # je vais changer le mdp !!!
 }
+variable "client_id" {
+  type = string
+}
+
+variable "client_secret" {
+  type = string
+}
+
+variable "tenant_id" {
+  type = string
+}
+
+variable "subscription_id" {
+  type = string
+}
+
+#variable pour faire la verification
+variable "tags" {
+  type    = map(string)
+  default = {
+    environment = "dev"
+  }
+}
