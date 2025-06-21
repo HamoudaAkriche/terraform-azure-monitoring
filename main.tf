@@ -99,3 +99,27 @@ resource "azurerm_virtual_machine_extension" "oms" {
     "workspaceKey" = azurerm_log_analytics_workspace.monitoring.primary_shared_key
   })
 }
+
+resource "azurerm_network_security_group" "web_nsg" {
+  name                = "nsg-web"
+  location            = var.location
+  resource_group_name = azurerm_resource_group.main.name
+
+  security_rule {
+    name                       = "allow-http"
+    priority                   = 100
+    direction                  = "Inbound"
+    access                     = "Allow"
+    protocol                   = "Tcp"
+    source_port_range          = "*"
+    destination_port_range     = "80"
+    source_address_prefix      = "*"
+    destination_address_prefix = "*"
+  }
+}
+
+resource "azurerm_network_interface_security_group_association" "nic_nsg" {
+  network_interface_id      = azurerm_network_interface.main_nic.id
+  network_security_group_id = azurerm_network_security_group.web_nsg.id
+}
+
